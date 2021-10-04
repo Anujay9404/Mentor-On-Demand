@@ -1,0 +1,85 @@
+
+<!-- nav -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+</head>
+</html>
+
+<!-- <ul>
+  <li><a class="active" href="#home">Home</a></li>
+
+  <li><a href="MentorComponent">Mentor</a></li>
+  <li><a href="AddMentorComponent">Add</a></li>
+</ul> -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- <div class="container-fluid">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+ <div class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" routerLink="/">Home</a></div>
+            <br>
+    </div> -->
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page"  routerLink="/">Home</a>
+          </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/mentor">View Mentors</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/add">Add Mentor</a>
+      </li>
+      
+    </ul>
+  </div>
+
+<!-- main app container -->
+
+<div class="jumbotron">
+    <nav>
+    <a *ngIf="currentUser" class="nav-item nav-link" style="cursor:pointer"(click)="logout()">LogOut</a></nav>
+    <div class="container">
+    <div class="row">
+    <div class="col-md-4 offset-md-4">
+    <router-outlet></router-outlet>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+

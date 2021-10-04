@@ -1,0 +1,47 @@
+
+<div *ngIf="showMessage" class="alert alert-success" role="alert">
+    Mentor successfully deleted!
+   </div>
+   <div class="input-group mb-3">
+     <span class="input-group-text" id="basic-addon1">Search</span>
+     <input type="text" #search (keyup)="0" class="form-control" placeholder="Search a mentor" aria-label="Username" aria-describedby="basic-addon1">
+   </div> 
+   <table class="table">
+    <thead>
+      <tr>
+           <th style="color:blue" scope="col">#</th><br>
+
+           <th style="color:blue" scope="col">Name</th><br>
+
+           <th style="color:blue" scope="col">Course</th><br>
+
+           <th style="color:blue" scope="col">Description</th><br>
+
+           <th style="color:blue" scope="col">Rating</th><br>
+
+           <th scope="col"  style="color:blue">Fees</th><br>
+           
+           <th scope="col"  style="color:blue"colspan="1">Actions</th> 
+           
+         </tr>
+       </thead>
+       <tbody>
+         <tr *ngFor="let mentor of mentors ">
+           <th  scope="row">{{mentor.id}}</th>
+           <td class="title" style="color:red">{{mentor.name}}</td>
+           <td style="color:red">{{mentor.course}}</td>
+           <td style="color:red">{{mentor.descp}}</td>
+           <td style="color:red">{{mentor.rating}}</td>
+           <td style="color:red">{{mentor.fees}}</td>
+           <!-- <td style="color:red">{{workout.startTime |  date: 'shortTime'}}</td> 
+           <td style="color:red">{{workout.endTime |  date: 'shortTime'}}</td>
+           
+           <td class = "totalcals" style="color:red">{{workout.totalCaloriesBurnt? workout.totalCaloriesBurnt:0}}</td> -->
+           <td><button (click)="deleteMentor(mentor.id)" class="btn btn-danger"> X </button></td> --> -->
+           <!-- <td><button [disabled]="workout.startTime" (click)="startWorkout" class="btn btn-primary"> Start </button></td> -->
+           <!-- <td><button [disabled]="!workout.startTime || workout.endTime" (click)="workout.endTime"class="btn btn-primary"> End </button></td>  -->
+         </tr>
+        
+       </tbody> 
+      </table>
+ 

@@ -1,0 +1,49 @@
+{
+    "workouts": [
+    {
+      "id": 2,
+      "title": "Pushups",
+      "description": "Strong muscles",
+      "cbpm": 13,
+      "startTime": "2021-09-27T07:11:56.944Z",
+      "endTime": "2021-09-27T06:58:06.367Z"
+    },
+    {
+      "title": "Sqauts",
+      "description": "increase lower body and core strength",
+      "id": 3,
+      "cbpm": 15,
+      "startTime": "2021-09-27T10:43:55.917Z"
+    },
+    {
+      "title": "Dumbbell rows",
+      "description": "Be fit",
+      "id": 4,
+      "cbpm": 12
+    },
+    {
+      "title": "Glude",
+      "description": "Booty workout",
+      "cbpm": 4,
+      "id": 5
+    },
+    {
+      "title": "Swimming",
+      "description": "good",
+      "cbpm": 12,
+      "id": 6
+    },
+    {
+      "title": "fornt Swimming",
+      "description": "really good",
+      "cbpm": 23,
+      "id": 7
+    },
+    {
+      "title": "Swimming fast",
+      "description": "really good",
+      "cbpm": 24,
+      "id": 8
+    }
+  ]
+}
